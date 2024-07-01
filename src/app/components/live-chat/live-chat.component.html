@@ -1,0 +1,14 @@
+<p-panel class="chat-container" [ngClass]="currentTheme">
+  <div class="chat-header">
+    <h3>Live Chat Support</h3>
+  </div>
+  <div class="chat-messages">
+    <div *ngFor="let message of messages" class="message" [ngClass]="{'sent': message.sentBy === 'user', 'received': message.sentBy === 'support'}">
+      <p>{{ message.text }}</p>
+    </div>
+  </div>
+  <div class="chat-input">
+    <input pInputText [(ngModel)]="newMessage" placeholder="Type your message here..." (keyup.enter)="sendMessage()" />
+    <button pButton type="button" label="Send" icon="pi pi-send" (click)="sendMessage()"></button>
+  </div>
+</p-panel>

@@ -1,0 +1,38 @@
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.light-theme .chat-container {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.light-theme .chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.light-theme .message.sent {
+  background-color: #dcf8c6;
+}
+
+.light-theme .message.received {
+  background-color: #f1f0f0;
+}
+
+.light-theme .chat-input button {
+  background-color: #007bff;
+  color: white;
+}
+
+.light-theme .chat-input button:hover {
+  background-color: #0056b3;
+}
+
+

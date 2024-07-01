@@ -1,0 +1,15 @@
+<p-menubar [model]="items">
+  <div class="p-mr-auto"></div>
+  <!-- <div class="theme-toggle" (click)="toggleTheme()">
+    <button pButton type="button" icon="{{ getIcon() }}" iconPos="left" label="Toggle Theme"></button>
+  </div> -->
+  <p-selectButton
+    [options]="selectOptions"
+    optionLabel="icon"
+    (onOptionClick)="toggleTheme($event)">
+    <ng-template let-item pTemplate>
+      <i [class]="item.icon"></i>
+    </ng-template>
+
+  </p-selectButton>
+</p-menubar>
