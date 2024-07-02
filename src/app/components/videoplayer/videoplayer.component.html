@@ -1,1 +1,7 @@
-<p>videoplayer works!</p>
+<div #plyrPlayer>
+  <video controls crossorigin playsinline>
+    <source src="./../../../assets/videos/test-video360.mp4" type="video/mp4" data-quality="360">
+    <source src="./../../../assets/videos/test-video720.mp4" type="video/mp4" data-quality="720">
+    <track kind="captions" src="./../../../assets/captions/spanishCap.vtt" srclang="sp" label="Español">
+  </video>
+</div>
